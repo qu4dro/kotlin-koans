@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSmartCasts" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-01-13T04:17:11" hostname="Orlovs-Air" time="0.011">
+  <properties/>
+  <testcase name="testNum" classname="TestSmartCasts" time="0.008"/>
+  <testcase name="testSum" classname="TestSmartCasts" time="0.002"/>
+  <testcase name="testRecursion" classname="TestSmartCasts" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
