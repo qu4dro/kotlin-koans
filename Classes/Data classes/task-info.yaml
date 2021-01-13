@@ -5,14 +5,14 @@ files:
   visible: true
   placeholders:
   - offset: 0
-    length: 12
+    length: 49
     placeholder_text: class Person
     initial_state:
       length: 12
       offset: 0
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: 'data class Person(val name: String, val age: Int)'
   text: |-
     class Person
@@ -48,5 +48,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 13 Jan 2021 04:10:34 UTC
 record: -1

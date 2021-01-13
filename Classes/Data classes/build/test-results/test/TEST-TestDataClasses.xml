@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestDataClasses" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-01-13T04:10:34" hostname="Orlovs-Air" time="0.063">
+  <properties/>
+  <testcase name="testComparePeople" classname="TestDataClasses" time="0.013"/>
+  <testcase name="testListOfPeople" classname="TestDataClasses" time="0.05"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
