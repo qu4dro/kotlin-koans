@@ -5,14 +5,14 @@ files:
   visible: true
   placeholders:
   - offset: 76
-    length: 6
+    length: 14
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 76
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: prefix = "[", postfix = "]"
   text: |
     fun joinOptions(options: Collection<String>) =
@@ -34,5 +34,8 @@ files:
 
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 13 Jan 2021 02:24:36 UTC
 record: -1
