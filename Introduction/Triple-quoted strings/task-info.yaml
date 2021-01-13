@@ -5,14 +5,14 @@ files:
   visible: true
   placeholders:
   - offset: 162
-    length: 13
+    length: 16
     placeholder_text: .trimIndent()
     initial_state:
       length: 13
       offset: 162
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: .trimMargin("#")
   text: |-
     const val question = "life, the universe, and everything"
@@ -44,5 +44,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 13 Jan 2021 02:37:10 UTC
 record: -1
