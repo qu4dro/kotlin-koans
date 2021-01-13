@@ -5,14 +5,14 @@ files:
   visible: true
   placeholders:
   - offset: 0
-    length: 56
+    length: 69
     placeholder_text: 'fun foo(name: String, number: Int, toUpperCase: Boolean)'
     initial_state:
       length: 56
       offset: 0
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: 'fun foo(name: String, number: Int = 42, toUpperCase:
       Boolean = false)'
   text: |
@@ -41,5 +41,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 13 Jan 2021 02:29:03 UTC
 record: -1
