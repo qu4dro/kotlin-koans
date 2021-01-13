@@ -4,15 +4,15 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 92
-    length: 6
+  - offset: 93
+    length: 25
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 92
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '"""\d{2} $month \d{4}"""'
   text: |
     val month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
@@ -45,5 +45,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 13 Jan 2021 02:50:47 UTC
 record: -1
