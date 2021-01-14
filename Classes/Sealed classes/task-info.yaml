@@ -4,7 +4,7 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 72
+  - offset: 64
     length: 10
     placeholder_text: TODO()
     initial_state:
@@ -14,7 +14,7 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: expr.value
-  - offset: 105
+  - offset: 93
     length: 34
     placeholder_text: TODO()
     initial_state:
@@ -24,8 +24,8 @@ files:
     selected: false
     status: Solved
     encrypted_possible_answer: eval(expr.left) + eval(expr.right)
-  - offset: 151
-    length: 122
+  - offset: 135
+    length: 114
     placeholder_text: interface Expr
     initial_state:
       length: 14
@@ -34,7 +34,7 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: sealed class Expr
-  - offset: 273
+  - offset: 249
     length: 0
     placeholder_text: Expr
     initial_state:
@@ -44,7 +44,7 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: Expr()
-  - offset: 273
+  - offset: 249
     length: 0
     placeholder_text: Expr
     initial_state:
