@@ -1,9 +1,9 @@
 fun eval(expr: Expr): Int =
         when (expr) {
-            is Num -> TODO()
-            is Sum -> TODO()
+            is Num -> expr.value
+            is Sum -> eval(expr.left) + eval(expr.right)
         }
 
-interface Expr
-class Num(val value: Int) : Expr
-class Sum(val left: Expr, val right: Expr) : Expr
+sealed class Expr
+    data class Num(val value: Int) : Expr()
+    data class Sum(val left: Expr, val right: Expr) : Expr()

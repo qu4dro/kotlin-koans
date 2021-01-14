@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSealedClasses" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-01-14T07:55:25" hostname="Orlovs-Air" time="0.039">
+  <properties/>
+  <testcase name="testNum" classname="TestSealedClasses" time="0.034"/>
+  <testcase name="testSum" classname="TestSealedClasses" time="0.002"/>
+  <testcase name="testRecursion" classname="TestSealedClasses" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

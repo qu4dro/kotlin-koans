@@ -5,54 +5,54 @@ files:
   visible: true
   placeholders:
   - offset: 72
-    length: 6
+    length: 10
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 72
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: expr.value
-  - offset: 101
-    length: 6
+  - offset: 105
+    length: 34
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 101
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: eval(expr.left) + eval(expr.right)
-  - offset: 119
-    length: 14
+  - offset: 151
+    length: 122
     placeholder_text: interface Expr
     initial_state:
       length: 14
       offset: 119
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: sealed class Expr
-  - offset: 162
-    length: 4
+  - offset: 273
+    length: 0
     placeholder_text: Expr
     initial_state:
       length: 4
       offset: 162
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: Expr()
-  - offset: 212
-    length: 4
+  - offset: 273
+    length: 0
     placeholder_text: Expr
     initial_state:
       length: 4
       offset: 212
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: Expr()
   text: |-
     fun eval(expr: Expr): Int =
@@ -88,5 +88,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 14 Jan 2021 07:55:26 UTC
 record: -1
