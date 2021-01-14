@@ -5,7 +5,7 @@ files:
   visible: true
   placeholders:
   - offset: 30
-    length: 6
+    length: 23
     placeholder_text: TODO()
     initial_state:
       length: 6
@@ -14,8 +14,8 @@ files:
     selected: false
     status: Unchecked
     encrypted_possible_answer: RationalNumber(this, 1)
-  - offset: 79
-    length: 6
+  - offset: 96
+    length: 39
     placeholder_text: TODO()
     initial_state:
       length: 6
