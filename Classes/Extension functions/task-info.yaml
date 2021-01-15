@@ -12,7 +12,7 @@ files:
       offset: 30
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: RationalNumber(this, 1)
   - offset: 96
     length: 39
@@ -22,7 +22,7 @@ files:
       offset: 79
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: RationalNumber(first, second)
   text: |
     fun Int.r(): RationalNumber = TODO()
@@ -49,5 +49,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 14 Jan 2021 08:03:28 UTC
 record: -1

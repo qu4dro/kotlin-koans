@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRangeTo" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-01-15T07:45:10" hostname="Orlovs-Air" time="0.015">
+  <properties/>
+  <testcase name="testAfter" classname="TestRangeTo" time="0.01"/>
+  <testcase name="testBefore" classname="TestRangeTo" time="0.002"/>
+  <testcase name="testInRange" classname="TestRangeTo" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

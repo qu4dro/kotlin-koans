@@ -4,14 +4,14 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 97
-    length: 10
+  - offset: 92
+    length: 0
     placeholder_text: /* TODO */
     initial_state:
       length: 10
       offset: 97
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       override fun compareTo(other: MyDate) = when {
