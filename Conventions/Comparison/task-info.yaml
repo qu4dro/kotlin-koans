@@ -4,15 +4,15 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 92
-    length: 0
+  - offset: 93
+    length: 299
     placeholder_text: /* TODO */
     initial_state:
       length: 10
       offset: 97
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       override fun compareTo(other: MyDate) = when {
               year != other.year -> year - other.year
@@ -53,5 +53,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 08 Feb 2021 03:22:07 UTC
 record: -1

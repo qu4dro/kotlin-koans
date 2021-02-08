@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestNullableTypes" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-01-13T03:02:51" hostname="Orlovs-Air" time="0.015">
+<testsuite name="TestNullableTypes" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-02-08T02:11:48" hostname="Orlovs-Air" time="0.051">
   <properties/>
-  <testcase name="everythingIsOk" classname="TestNullableTypes" time="0.009"/>
+  <testcase name="everythingIsOk" classname="TestNullableTypes" time="0.021"/>
   <testcase name="noClient" classname="TestNullableTypes" time="0.001"/>
-  <testcase name="noMessage" classname="TestNullableTypes" time="0.0"/>
-  <testcase name="noPersonalInfo" classname="TestNullableTypes" time="0.0"/>
-  <testcase name="noEmail" classname="TestNullableTypes" time="0.001"/>
+  <testcase name="noMessage" classname="TestNullableTypes" time="0.003"/>
+  <testcase name="noPersonalInfo" classname="TestNullableTypes" time="0.018"/>
+  <testcase name="noEmail" classname="TestNullableTypes" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
