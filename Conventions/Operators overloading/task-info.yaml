@@ -5,15 +5,15 @@ files:
   visible: true
   placeholders:
   - offset: 192
-    length: 69
+    length: 96
     placeholder_text: 'operator fun MyDate.plus(timeInterval: TimeInterval): MyDate
       = TODO()'
     initial_state:
       length: 69
       offset: 192
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       operator fun MyDate.plus(timeInterval: TimeInterval) =
               addTimeIntervals(timeInterval, 1)
@@ -25,16 +25,16 @@ files:
 
       operator fun MyDate.plus(timeIntervals: RepeatedTimeInterval) =
               addTimeIntervals(timeIntervals.timeInterval, timeIntervals.number)
-  - offset: 371
-    length: 64
+  - offset: 408
+    length: 39
     placeholder_text: TODO("Uncomment") //return today + YEAR * 2 + WEEK * 3 + DAY
       * 5
     initial_state:
       length: 64
       offset: 371
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: return today + YEAR * 2 + WEEK * 3 + DAY * 5
   text: |
     import TimeInterval.*
@@ -105,5 +105,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 08 Feb 2021 03:51:54 UTC
 record: -1
