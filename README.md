@@ -2,7 +2,7 @@
 
 These are my solutions to [Kotlin Koans](https://play.kotlinlang.org/koans/overview)
 * Introduction
-    * [Hello, world!](https://github.com/qu4dro/kotlin-koans/#hello-world)
+    * [Hello, world!](https://github.com/qu4dro/kotlin-koans/tree/test/#hello-world)
     * [Named arguments](https://github.com/qu4dro/kotlin-koans/blob/main/Introduction/Named%20arguments/src/Task.kt)
     * [Default arguments](https://github.com/qu4dro/kotlin-koans/blob/main/Introduction/Default%20arguments/src/Task.kt)
     * [Triple-quoted strings](https://github.com/qu4dro/kotlin-koans/blob/main/Introduction/Triple-quoted%20strings/src/Task.kt)
