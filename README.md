@@ -1,7 +1,8 @@
 # Kotlin Koans tasks
 
+These are my solutions to [Kotlin Koans](https://play.kotlinlang.org/koans/overview)
 * Introduction
-    * [Hello, world!](https://github.com/qu4dro/kotlin-koans/blob/main/Introduction/Hello%2C%20world_/src/Task.kt)
+    * [Hello, world!](https://github.com/qu4dro/kotlin-koans/#hello-world)
     * [Named arguments](https://github.com/qu4dro/kotlin-koans/blob/main/Introduction/Named%20arguments/src/Task.kt)
     * [Default arguments](https://github.com/qu4dro/kotlin-koans/blob/main/Introduction/Default%20arguments/src/Task.kt)
     * [Triple-quoted strings](https://github.com/qu4dro/kotlin-koans/blob/main/Introduction/Triple-quoted%20strings/src/Task.kt)
@@ -56,3 +57,21 @@
 
 * Generics
     * [Generic functions](https://github.com/qu4dro/kotlin-koans/blob/main/Generics/Generic%20functions/src/Task.kt)
+
+## Introduction
+
+### Hello World!
+```
+Simple Functions
+
+Take a look at function syntax and make the function start return the string "OK".
+
+In the tasks the function TODO() is used that throws an exception. 
+Your job during the koans will be to replace this function invocation with 
+a meaningful code according to the problem.
+```
+
+Solution
+```kotlin
+fun start() = "OK"
+```
