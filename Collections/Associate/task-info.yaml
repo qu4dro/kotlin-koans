@@ -4,35 +4,35 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 116
-    length: 6
+  - offset: 112
+    length: 33
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 116
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: customers.associateBy(Customer::name)
-  - offset: 231
-    length: 6
+  - offset: 250
+    length: 35
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 231
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: customers.associateWith(Customer::city)
-  - offset: 353
-    length: 6
+  - offset: 397
+    length: 42
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 353
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: customers.associate { it.name to it.city }
   text: |-
     // Build a map from the customer name to the customer
@@ -169,5 +169,8 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 09 Feb 2021 04:02:41 UTC
 record: -1
