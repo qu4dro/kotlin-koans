@@ -4,25 +4,25 @@ files:
 - name: src/Task.kt
   visible: true
   placeholders:
-  - offset: 106
-    length: 6
+  - offset: 102
+    length: 47
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 106
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: customers.map { it.city }.toSet()
-  - offset: 223
-    length: 6
+  - offset: 256
+    length: 50
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 223
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: customers.filter { it.city == city }
   text: |
     // Find all the different cities the customers are from
@@ -143,5 +143,8 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 09 Feb 2021 02:28:37 UTC
 record: -1
