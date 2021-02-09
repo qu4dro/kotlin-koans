@@ -928,13 +928,38 @@ fun Customer.getOrderedProducts(): List<Product> =
 ### Compound tasks
 
 ```
+Implement two functions:
 
+The first one should find the most expensive product among all the 
+delivered products ordered by the customer. Use Order.isDelivered flag.
+
+The second one should count the amount of times a product was ordered. 
+Note that a customer may order the same product several times.
+
+Use the functions from the Kotlin standard library that were previously 
+discussed.
+
+You can use the Customer.getOrderedProducts() function defined in the 
+previous task (copy its implementation).
 ```
 
 Solution
 
 ```kotlin
+// Find the most expensive product among all the delivered products
+// ordered by the customer. Use `Order.isDelivered` flag.
+fun findMostExpensiveProductBy(customer: Customer): Product? {
+    return customer.getOrderedProducts().maxBy { it.price }
+}
 
+// Count the amount of times a product was ordered.
+// Note that a customer may order the same product several times.
+fun Shop.getNumberOfTimesProductWasOrdered(product: Product): Int {
+    return customers.flatMap { it.orders }.flatMap { it.products }.count { it == product }
+}
+
+fun Customer.getOrderedProducts(): List<Product> =
+    orders.filter { it.isDelivered }.flatMap { it.products }
 ```
 
 ### Getting used to new style

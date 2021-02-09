@@ -5,42 +5,42 @@ files:
   visible: true
   placeholders:
   - offset: 193
-    length: 6
+    length: 55
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 193
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       return customer
                   .orders
                   .filter(Order::isDelivered)
                   .flatMap(Order::products)
                   .maxBy(Product::price)
-  - offset: 393
-    length: 6
+  - offset: 438
+    length: 90
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 393
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       return customers
                   .flatMap(Customer::getOrderedProducts)
                   .count { it == product }
-  - offset: 462
-    length: 10
+  - offset: 583
+    length: 60
     placeholder_text: /* TODO */
     initial_state:
       length: 10
       offset: 462
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: orders.flatMap(Order::products)
   text: |
     // Find the most expensive product among all the delivered products
@@ -173,5 +173,8 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 09 Feb 2021 05:05:16 UTC
 record: -1
