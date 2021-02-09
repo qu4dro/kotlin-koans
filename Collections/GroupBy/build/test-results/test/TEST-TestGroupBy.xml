@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestGroupBy" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-09T03:32:10" hostname="Orlovs-Air" time="0.137">
+  <properties/>
+  <testcase name="testGroupCustomersByCity" classname="TestGroupBy" time="0.137"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
