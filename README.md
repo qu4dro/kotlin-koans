@@ -729,13 +729,31 @@ fun Shop.findCustomerFrom(city: City): Customer? =
 ### Max min
 
 ```
+Learn about Collection Aggregate Operations.
 
+Implement two functions:
+
+the first should return the customer who has placed 
+the most amount of orders in this shop the second 
+should return the most expensive product 
+that has been ordered by the given customer
+The functions max, min, maxBy, and minBy might be helpful.
+
+listOf(1, 42, 4).max() == 42
+listOf("a", "ab").minBy(String::length) == "a"
+You can use callable references instead of lambdas. This can be especially helpful in call chains, where it occurs in different lambdas and has different types. Implement the getMostExpensiveProductBy function using callable references.
 ```
 
 Solution
 
 ```kotlin
+// Return a customer who has placed the maximum amount of orders
+fun Shop.getCustomerWithMaxOrders(): Customer? =
+    customers.maxBy { it.orders.size }
 
+// Return the most expensive product that has been ordered by the given customer
+fun getMostExpensiveProductBy(customer: Customer): Product? =
+    customer.orders.flatMap { it.products }.maxBy { it.price }
 ```
 
 ### Sum
