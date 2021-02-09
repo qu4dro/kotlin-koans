@@ -688,13 +688,42 @@ fun Shop.getCustomersFrom(city: City): List<Customer> =
 ### All Any and other predicates
 
 ```
+Learn about testing predicates and retrieving elements by condition.
 
+Implement the following functions using all, any, count, find:
+
+checkAllCustomersAreFrom should return true if all customers are from a given city
+hasCustomerFrom should check if there is at least one customer from a given city
+countCustomersFrom should return the number of customers from a given city
+findCustomerFrom should return a customer who lives in a given city, or null if 
+there is none
+
+val numbers = listOf(-1, 0, 2)
+val isZero: (Int) -> Boolean = { it == 0 }
+numbers.any(isZero) == true
+numbers.all(isZero) == false
+numbers.count(isZero) == 1
+numbers.find { it > 0 } == 2
 ```
 
 Solution
 
 ```kotlin
+// Return true if all customers are from a given city
+fun Shop.checkAllCustomersAreFrom(city: City): Boolean =
+    this.customers.all { it.city == city }
 
+// Return true if there is at least one customer from a given city
+fun Shop.hasCustomerFrom(city: City): Boolean =
+    this.customers.any { it.city == city }
+
+// Return the number of customers from a given city
+fun Shop.countCustomersFrom(city: City): Int =
+    this.customers.count { it.city == city }
+
+// Return a customer who lives in a given city, or null if there is none
+fun Shop.findCustomerFrom(city: City): Customer? =
+    this.customers.find { it.city == city }
 ```
 
 ### Max min
