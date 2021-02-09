@@ -5,14 +5,14 @@ files:
   visible: true
   placeholders:
   - offset: 134
-    length: 6
+    length: 182
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 134
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       customers.filter {
           val (delivered, undelivered) = it.orders.partition { it.isDelivered }
@@ -126,5 +126,8 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 09 Feb 2021 04:28:31 UTC
 record: -1
