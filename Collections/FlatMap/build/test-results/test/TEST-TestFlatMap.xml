@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestFlatMap" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-02-09T04:35:21" hostname="Orlovs-Air" time="0.067">
+  <properties/>
+  <testcase name="testGetOrderedProductsSet" classname="TestFlatMap" time="0.061"/>
+  <testcase name="testGetAllOrderedProducts" classname="TestFlatMap" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
