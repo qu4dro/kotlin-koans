@@ -627,13 +627,34 @@ fun Shop.getSetOfCustomers(): Set<Customer> =
 ### Sort
 
 ```
+Learn about collection ordering and the the difference between 
+operations in-place on mutable collections and operations returning 
+new collections.
 
+Implement a function for returning the list of customers, sorted in 
+descending order by the number of orders they have made. Use 
+sortedDescending or sortedByDescending.
+
+val strings = listOf("bbb", "a", "cc")
+strings.sorted() ==
+        listOf("a", "bbb", "cc")
+
+strings.sortedBy { it.length } ==
+        listOf("a", "cc", "bbb")
+
+strings.sortedDescending() ==
+        listOf("cc", "bbb", "a")
+
+strings.sortedByDescending { it.length } ==
+        listOf("bbb", "cc", "a")
 ```
 
 Solution
 
 ```kotlin
-
+// Return a list of customers, sorted in the descending by number of orders they have made
+fun Shop.getCustomersSortedByOrders(): List<Customer> =
+    this.customers.toList().sortedByDescending { it.orders.size }
 ```
 
 ### Filter map

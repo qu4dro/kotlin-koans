@@ -5,14 +5,14 @@ files:
   visible: true
   placeholders:
   - offset: 147
-    length: 14
+    length: 65
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 155
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: customers.sortedByDescending { it.orders.size }
   text: |
     // Return a list of customers, sorted in the descending by number of orders they have made
@@ -129,5 +129,8 @@ files:
             Tokyo to listOf(asuka)
     ).mapValues { it.value.map { name -> customers[name] } }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 09 Feb 2021 02:07:28 UTC
 record: -1
