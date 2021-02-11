@@ -1012,13 +1012,28 @@ fun doSomethingWithCollection(collection: Collection<String>): Collection<String
 ### Sequences
 
 ```
-
+Learn about sequences, they allow you to perform operations lazily rather than eagerly. 
+Copy the implementation from the previous task and modify it in a way that the operations 
+on sequences are used.
 ```
 
 Solution
 
 ```kotlin
+// Find the most expensive product among all the delivered products
+// ordered by the customer. Use `Order.isDelivered` flag.
+fun findMostExpensiveProductBy(customer: Customer): Product? {
+    return customer.getOrderedProducts().maxBy { it.price }
+}
 
+// Count the amount of times a product was ordered.
+// Note that a customer may order the same product several times.
+fun Shop.getNumberOfTimesProductWasOrdered(product: Product): Int {
+    return customers.flatMap { it.orders }.flatMap { it.products }.count { it == product }
+}
+
+fun Customer.getOrderedProducts(): Sequence<Product> =
+    orders.filter { it.isDelivered }.flatMap { it.products }.asSequence()
 ```
 
 ## Properties
@@ -1026,13 +1041,23 @@ Solution
 ### Properties
 
 ```
+Learn about the properties in Kotlin.
 
+Add a custom setter to PropertyExample.propertyWithCounter so that the counter property
+is incremented every time a propertyWithCounter is assigned to it.
 ```
 
 Solution
 
 ```kotlin
-
+class PropertyExample() {
+    var counter = 0
+    var propertyWithCounter: Int? = null
+        set(value) {
+            counter++
+            field = value
+        }
+}
 ```
 
 ### Lazy property
