@@ -5,14 +5,14 @@ files:
   visible: true
   placeholders:
   - offset: 95
-    length: 3
+    length: 70
     placeholder_text: set
     initial_state:
       length: 3
       offset: 95
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       set(v) {
                   field = v
@@ -45,5 +45,8 @@ files:
 
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 11 Feb 2021 04:53:30 UTC
 record: -1
