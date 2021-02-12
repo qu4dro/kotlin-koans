@@ -1235,12 +1235,47 @@ fun createMap(): Map<Int, String> {
 ### Html builders
 
 ```
+1. Fill the table with proper values from the product list. 
+The products are declared in data.kt.
 
+2. Color the table like a chess board. Use the getTitleColor() 
+and getCellColor() functions. Pass a color as an argument to the 
+functions tr, td.
+
+Run the main function defined in the file demo.kt to see the rendered table.
 ```
 
 Solution
 
 ```kotlin
+fun renderProductTable(): String {
+    return html {
+        table {
+            tr (color = getTitleColor()) {
+                td {
+                    text("Product")
+                }
+                td {
+                    text("Price")
+                }
+                td {
+                    text("Popularity")
+                }
+            }
+            val products = getProducts()
+            products.forEachIndexed { i, product ->
+                tr (color = getCellColor(i)){
+                    td { this.text(product.description) }
+                    td { this.text(product.price) }
+                    td { this.text(product.popularity) }
+                }
+            }
+        }
+    }.toString()
+}
+
+fun getTitleColor() = "#b9c9fe"
+fun getCellColor(i: Int) = if (i % 2 == 0) "#dce4ff" else "#eff2ff"
 
 ```
 
