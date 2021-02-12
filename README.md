@@ -1063,13 +1063,27 @@ class PropertyExample() {
 ### Lazy property
 
 ```
+Add a custom getter to make the val 'lazy' really lazy. It should be 
+initialized by invoking 'initializer()' during the first access.
 
+You can add any additional properties as you need.
+
+Do not use delegated properties!
 ```
 
 Solution
 
 ```kotlin
-
+class LazyProperty(val initializer: () -> Int) {
+    var lazyValue: Int? = null
+        get() {
+            if (field == null) field = initializer()
+            return field
+        }
+    val lazy: Int
+        get() =
+            lazyValue!!
+}
 ```
 
 ### Delegates examples
