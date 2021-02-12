@@ -5,27 +5,27 @@ files:
   visible: true
   placeholders:
   - offset: 352
-    length: 10
+    length: 54
     placeholder_text: /* TODO */
     initial_state:
       length: 10
       offset: 352
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       val tr = TR()
               tr.init()
               children += tr
-  - offset: 437
-    length: 10
+  - offset: 481
+    length: 28
     placeholder_text: /* TODO */
     initial_state:
       length: 10
       offset: 437
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: children += TD().apply(init)
   text: |-
     open class Tag(val name: String) {
@@ -108,5 +108,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 12 Feb 2021 06:28:50 UTC
 record: -1
