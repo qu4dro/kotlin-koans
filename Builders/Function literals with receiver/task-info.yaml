@@ -5,24 +5,24 @@ files:
   visible: true
   placeholders:
   - offset: 66
-    length: 6
+    length: 13
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 66
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: this % 2 == 0
-  - offset: 112
-    length: 6
+  - offset: 119
+    length: 13
     placeholder_text: TODO()
     initial_state:
       length: 6
       offset: 112
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: this % 2 != 0
   text: |
     fun task(): List<Boolean> {
@@ -47,5 +47,8 @@ files:
         }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 12 Feb 2021 05:41:25 UTC
 record: -1
