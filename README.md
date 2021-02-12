@@ -1089,13 +1089,15 @@ class LazyProperty(val initializer: () -> Int) {
 ### Delegates examples
 
 ```
-
+Learn about delegated properties and make the property lazy using delegates.
 ```
 
 Solution
 
 ```kotlin
-
+class LazyProperty(val initializer: () -> Int) {
+    val lazyValue: Int by lazy(initializer)
+}
 ```
 
 ### Delegates how it works
