@@ -1159,13 +1159,42 @@ fun task(): List<Boolean> {
 ### String and map builders
 
 ```
+Function literals with receiver are very useful for creating builders, for example:
 
+fun buildString(build: StringBuilder.() -> Unit): String {
+    val stringBuilder = StringBuilder()
+    stringBuilder.build()
+    return stringBuilder.toString()
+}
+
+val s = buildString {
+    this.append("Numbers: ")
+    for (i in 1..3) {
+        // 'this' can be omitted
+        append(i)
+    }
+}
+
+s == "Numbers: 123"
+Implement the function 'buildMap' that takes a parameter (of extension function type) 
+creates a new HashMap, builds it, and returns it as a result.
 ```
 
 Solution
 
 ```kotlin
+fun buildMap(hash: HashMap<Int, String>.() -> Unit): Map<Int, String> {
+    return HashMap<Int, String>().apply { hash() }
+}
 
+fun usage(): Map<Int, String> {
+    return buildMap {
+        put(0, "0")
+        for (i in 1..10) {
+            put(i, "$i")
+        }
+    }
+}
 ```
 
 ### The function apply

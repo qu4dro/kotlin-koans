@@ -1,6 +1,8 @@
 import java.util.HashMap
 
-/* TODO */
+fun buildMap(hash: HashMap<Int, String>.() -> Unit): Map<Int, String> {
+    return HashMap<Int, String>().apply { hash() }
+}
 
 fun usage(): Map<Int, String> {
     return buildMap {
